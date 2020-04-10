@@ -8,6 +8,9 @@ module.exports = {  //Aquí se encuentra toda la configuración de lo que va a s
         path: path.resolve(__dirname, 'dist'),  //Creamos el lugar dónde se exportará el proyecto.
         filename: 'main.js' //Este es el nombre del archivo final para producción.
     },
+    externals: {
+        application: "application"
+      },
     resolve: {
         extensions: ['.js'], //Extensiones que vamos a utilizar.
     },
